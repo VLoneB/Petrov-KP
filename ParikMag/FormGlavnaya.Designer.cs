@@ -60,6 +60,7 @@
             this.корзинаBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.корзинаTableAdapter = new ParikMag.ParikmakeDataSetTableAdapters.КорзинаTableAdapter();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.товарBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parikmakeDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -157,11 +158,11 @@
             this.buttonAddToOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddToOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.buttonAddToOrder.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonAddToOrder.Location = new System.Drawing.Point(700, 288);
+            this.buttonAddToOrder.Location = new System.Drawing.Point(690, 288);
             this.buttonAddToOrder.Name = "buttonAddToOrder";
-            this.buttonAddToOrder.Size = new System.Drawing.Size(152, 34);
+            this.buttonAddToOrder.Size = new System.Drawing.Size(167, 34);
             this.buttonAddToOrder.TabIndex = 15;
-            this.buttonAddToOrder.Text = "Добавить в заказ";
+            this.buttonAddToOrder.Text = "Добавить в корзину";
             this.buttonAddToOrder.UseVisualStyleBackColor = false;
             this.buttonAddToOrder.Click += new System.EventHandler(this.buttonAddToOrder_Click);
             // 
@@ -371,10 +372,26 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(639, 297);
+            this.numericUpDown1.Location = new System.Drawing.Point(604, 297);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown1.TabIndex = 40;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(587, 320);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(76, 13);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Количество";
             // 
             // FormGlavnaya
             // 
@@ -384,6 +401,7 @@
             this.BackgroundImage = global::ParikMag.Properties.Resources.фон_основной;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(881, 446);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
@@ -454,5 +472,6 @@
         private System.Windows.Forms.BindingSource корзинаBindingSource;
         private ParikmakeDataSetTableAdapters.КорзинаTableAdapter корзинаTableAdapter;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label10;
     }
 }

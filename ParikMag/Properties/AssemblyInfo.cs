@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("ParikMag")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Магазин профессиональных товаров")]
+[assembly: AssemblyDescription("Программа предназначена для оформления заказов в магазине профессиональных товаров и редактирования информации их")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DEXP")]
-[assembly: AssemblyProduct("ParikMag")]
-[assembly: AssemblyCopyright("Copyright © DEXP 2023")]
+[assembly: AssemblyCompany("РКРИПТ")]
+[assembly: AssemblyProduct("Магазин профессиональных товаров")]
+[assembly: AssemblyCopyright("Петров Андрей Евгеньевич ПО-42")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

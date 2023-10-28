@@ -71,3 +71,4 @@ C:\Users\User\source\repos\ParikMag\obj\Debug\ParikMag.FormAuthorize.resources
 C:\Users\User\source\repos\ParikMag\obj\Debug\ParikMag.FormAdminTovar.resources
 C:\Users\User\source\repos\ParikMag\obj\Debug\ParikMag.FormAdminLogin.resources
 C:\Users\User\source\repos\ParikMag\obj\Debug\ParikMag.FormAdminZakaz.resources
+C:\Users\User\source\repos\ParikMag\obj\Debug\ParikMag.AboutBox.resources

@@ -37,6 +37,7 @@ namespace ParikMag
                 товарTableAdapter.Insert(textBoxAddBrand.Text, textBoxAddModel.Text, this.textBoxAddPrice.Text, textBoxAddPhoto.Text, richTextBoxOpisanie.Text, (int)comboBoxAddCategory.SelectedValue);
                 this.товарTableAdapter.Fill(this.parikmakeDataSet.Товар);
                 int idClient = Convert.ToInt32(товарTableAdapter.GetData().Rows[товарBindingSource.Count - 1][0]);
+                MessageBox.Show("Товар добавлен в список");
             }
             else
             {
@@ -50,6 +51,7 @@ namespace ParikMag
             this.Validate();
             this.товарBindingSource.EndEdit();
             this.товарTableAdapter.Update(this.parikmakeDataSet.Товар);
+            MessageBox.Show("Выбранный товар удалён");
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)

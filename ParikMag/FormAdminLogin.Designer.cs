@@ -89,7 +89,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1031, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(831, 25);
             this.bindingNavigator1.TabIndex = 41;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -183,7 +183,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.Location = new System.Drawing.Point(920, 397);
+            this.button1.Location = new System.Drawing.Point(716, 397);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 34);
             this.button1.TabIndex = 43;
@@ -198,7 +198,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Location = new System.Drawing.Point(323, 397);
+            this.button2.Location = new System.Drawing.Point(175, 397);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(153, 34);
             this.button2.TabIndex = 45;
@@ -218,7 +218,7 @@
             this.dataGridView1.DataSource = this.авторизацияBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 28);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(743, 273);
+            this.dataGridView1.Size = new System.Drawing.Size(559, 273);
             this.dataGridView1.TabIndex = 46;
             // 
             // кодпользователяDataGridViewTextBoxColumn
@@ -282,7 +282,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button6.Location = new System.Drawing.Point(493, 307);
+            this.button6.Location = new System.Drawing.Point(319, 307);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(240, 34);
             this.button6.TabIndex = 48;
@@ -295,7 +295,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(884, 74);
+            this.label9.Location = new System.Drawing.Point(713, 65);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(51, 13);
             this.label9.TabIndex = 52;
@@ -303,14 +303,14 @@
             // 
             // textBoxAddLogin
             // 
-            this.textBoxAddLogin.Location = new System.Drawing.Point(750, 37);
+            this.textBoxAddLogin.Location = new System.Drawing.Point(579, 28);
             this.textBoxAddLogin.Name = "textBoxAddLogin";
             this.textBoxAddLogin.Size = new System.Drawing.Size(123, 20);
             this.textBoxAddLogin.TabIndex = 49;
             // 
             // textBoxAddPassword
             // 
-            this.textBoxAddPassword.Location = new System.Drawing.Point(750, 71);
+            this.textBoxAddPassword.Location = new System.Drawing.Point(579, 62);
             this.textBoxAddPassword.Name = "textBoxAddPassword";
             this.textBoxAddPassword.Size = new System.Drawing.Size(123, 20);
             this.textBoxAddPassword.TabIndex = 50;
@@ -320,7 +320,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(884, 40);
+            this.label4.Location = new System.Drawing.Point(713, 31);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 51;
@@ -331,7 +331,7 @@
             this.comboBoxAddType.DataSource = this.авторизацияBindingSource;
             this.comboBoxAddType.DisplayMember = "Тип_пользователя";
             this.comboBoxAddType.FormattingEnabled = true;
-            this.comboBoxAddType.Location = new System.Drawing.Point(750, 105);
+            this.comboBoxAddType.Location = new System.Drawing.Point(579, 96);
             this.comboBoxAddType.Name = "comboBoxAddType";
             this.comboBoxAddType.Size = new System.Drawing.Size(123, 21);
             this.comboBoxAddType.TabIndex = 54;
@@ -342,7 +342,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(884, 108);
+            this.label2.Location = new System.Drawing.Point(713, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 13);
             this.label2.TabIndex = 53;
@@ -355,7 +355,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.Location = new System.Drawing.Point(532, 397);
+            this.button4.Location = new System.Drawing.Point(426, 397);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(211, 34);
             this.button4.TabIndex = 55;
@@ -368,7 +368,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1031, 443);
+            this.ClientSize = new System.Drawing.Size(831, 443);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.comboBoxAddType);
             this.Controls.Add(this.label2);

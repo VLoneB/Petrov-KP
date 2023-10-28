@@ -53,6 +53,7 @@ namespace ParikMag
                 авторизацияTableAdapter.Insert(textBoxAddLogin.Text, textBoxAddPassword.Text, comboBoxAddType.Text);
                 this.авторизацияTableAdapter.Fill(this.parikmakeDataSet.Авторизация);
                 int idAuth = Convert.ToInt32(авторизацияTableAdapter.GetData().Rows[авторизацияBindingSource.Count - 1][0]);
+                MessageBox.Show("Пользователь добавлен в список");
             }
             else
             {
@@ -66,6 +67,7 @@ namespace ParikMag
             this.Validate();
             this.авторизацияBindingSource.EndEdit();
             this.авторизацияTableAdapter.Update(this.parikmakeDataSet.Авторизация);
+            MessageBox.Show("Выбранный пользователь удалён");
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -26,14 +26,14 @@ namespace ParikMag
             this.корзинаTableAdapter.Fill(this.parikmakeDataSet.Корзина);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "parikmakeDataSet.Заказ". При необходимости она может быть перемещена или удалена.
             this.заказTableAdapter.Fill(this.parikmakeDataSet.Заказ);
-            SqlConnection conn = new SqlConnection(@"Server=DESKTOP-5QAL5CH\SQLEXPRESS03;Database=Parikmake;Trusted_Connection=true");
-            conn.Open();
-            SqlCommand comm = conn.CreateCommand();
-            int result = Convert.ToInt32(comm.ExecuteScalar());
-            заказBindingSource.Filter = "Код_пользователя = " + result;
-            comm.CommandText = "select sum(Цена) from Товар join Корзина on Товар.Код_товара = Корзина.Код_товара where Корзина.Код_пользователя = @id";
-            comm.Parameters.AddWithValue("@id", result);
-            textBoxSum.Text = comm.ExecuteScalar().ToString();
+            //SqlConnection conn = new SqlConnection(@"Server=DESKTOP-5QAL5CH\SQLEXPRESS03;Database=Parikmake;Trusted_Connection=true");
+            //conn.Open();
+            //SqlCommand comm = conn.CreateCommand();
+            //int result = Convert.ToInt32(comm.ExecuteScalar());
+            //заказBindingSource.Filter = "Код_пользователя = " + result;
+            //comm.CommandText = "select sum(Цена) from Товар join Корзина on Товар.Код_товара = Корзина.Код_товара where Корзина.Код_пользователя = @id";
+            //comm.Parameters.AddWithValue("@id", result);
+            //textBoxSum.Text = comm.ExecuteScalar().ToString();
 
         }
 
@@ -67,6 +67,7 @@ namespace ParikMag
             this.Validate();
             this.заказBindingSource.EndEdit();
             this.заказTableAdapter.Update(this.parikmakeDataSet.Заказ);
+            MessageBox.Show("Заказ удалён");
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -74,6 +75,7 @@ namespace ParikMag
             заказBindingSource.EndEdit();
             заказTableAdapter.Update(this.parikmakeDataSet);
             this.заказTableAdapter.Fill(this.parikmakeDataSet.Заказ);
+            MessageBox.Show("Информация о заказе сохранена");
         }
 
         private void button3_Click(object sender, EventArgs e)

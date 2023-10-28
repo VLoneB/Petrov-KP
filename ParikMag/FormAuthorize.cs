@@ -96,5 +96,13 @@ namespace ParikMag
             formglavnaya.ShowDialog();
             this.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AboutBox aboutbox = new AboutBox();
+            this.Hide();
+            aboutbox.ShowDialog();
+            this.Show();
+        }
     }
 }

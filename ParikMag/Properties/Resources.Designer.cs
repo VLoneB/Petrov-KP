@@ -63,6 +63,16 @@ namespace ParikMag.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Лого {
+            get {
+                object obj = ResourceManager.GetObject("Лого", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap показать_пароль {
             get {
                 object obj = ResourceManager.GetObject("показать пароль", resourceCulture);
