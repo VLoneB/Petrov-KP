@@ -20,10 +20,7 @@ namespace ParikMag
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormAuthorize form1 = new FormAuthorize();
-            this.Hide();
-            form1.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

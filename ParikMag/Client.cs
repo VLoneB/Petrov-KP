@@ -17,4 +17,23 @@ namespace ParikMag
             throw new System.NotImplementedException();
         }
     }
+
+    public class Корзина
+    {
+        private int Код_пользователя;
+        private int Код_корзины;
+        private int Бренд;
+        private int Код_товара;
+        private int Количество_товара;
+
+        public void GetKorzina()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SetKorzina()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

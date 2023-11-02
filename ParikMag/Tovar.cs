@@ -16,5 +16,25 @@ namespace ParikMag
         {
             throw new System.NotImplementedException();
         }
+
+        public void DeleteTovar()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+
+    public class Категория
+    {
+        private int Код_категории;
+
+        public void GetCategory()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SetCategory()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

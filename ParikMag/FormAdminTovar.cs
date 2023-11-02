@@ -34,7 +34,7 @@ namespace ParikMag
             if (textBoxAddBrand.Text != "" && textBoxAddModel.Text != "" && this.textBoxAddPrice.Text != "" && 
                 textBoxAddPhoto.Text != "" && richTextBoxOpisanie.Text != "")
             {
-                товарTableAdapter.Insert(textBoxAddBrand.Text, textBoxAddModel.Text, this.textBoxAddPrice.Text, textBoxAddPhoto.Text, richTextBoxOpisanie.Text, (int)comboBoxAddCategory.SelectedValue);
+                товарTableAdapter.Insert(textBoxAddBrand.Text, textBoxAddModel.Text, Convert.ToInt32(this.textBoxAddPrice.Text), textBoxAddPhoto.Text, richTextBoxOpisanie.Text, (int)comboBoxAddCategory.SelectedValue);
                 this.товарTableAdapter.Fill(this.parikmakeDataSet.Товар);
                 int idClient = Convert.ToInt32(товарTableAdapter.GetData().Rows[товарBindingSource.Count - 1][0]);
                 MessageBox.Show("Товар добавлен в список");
@@ -76,10 +76,7 @@ namespace ParikMag
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormAuthorize form1 = new FormAuthorize();
-            this.Hide();
-            form1.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)

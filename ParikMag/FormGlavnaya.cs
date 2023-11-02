@@ -35,9 +35,9 @@ namespace ParikMag
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormAuthorize form1 = new FormAuthorize();
+            FormAuthorize formAuthorize = new FormAuthorize();
             this.Hide();
-            form1.ShowDialog();
+            formAuthorize.ShowDialog();
             this.Show();
         }
 
@@ -60,6 +60,7 @@ namespace ParikMag
                 buttonAddToOrder.Visible = false;
                 numericUpDown1.Visible = false;
                 buttonKorzina.Visible = false;
+                labelCount.Visible = false;
             }
         }
 
@@ -85,7 +86,7 @@ namespace ParikMag
 
         private void buttonAddToOrder_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Server=DESKTOP-5QAL5CH\SQLEXPRESS03;Database=Parikmake;Trusted_Connection=true");
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.ParikmakeConnectionString);
             conn.Open();
             SqlCommand comm = conn.CreateCommand();
             comm.CommandText = "select Код_пользователя from Авторизация where (Логин = '" + idUser+"')";

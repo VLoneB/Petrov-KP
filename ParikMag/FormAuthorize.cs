@@ -104,5 +104,10 @@ namespace ParikMag
             aboutbox.ShowDialog();
             this.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

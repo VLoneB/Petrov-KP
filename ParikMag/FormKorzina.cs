@@ -43,7 +43,7 @@ namespace ParikMag
             this.авторизацияTableAdapter.Fill(this.parikmakeDataSet.Авторизация);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "parikmakeDataSet.Корзина". При необходимости она может быть перемещена или удалена.
             this.корзинаTableAdapter.Fill(this.parikmakeDataSet.Корзина);
-            SqlConnection conn = new SqlConnection(@"Server=DESKTOP-5QAL5CH\SQLEXPRESS03;Database=Parikmake;Trusted_Connection=true");
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.ParikmakeConnectionString);
             conn.Open();
             SqlCommand comm = conn.CreateCommand();
             comm.CommandText = "select Код_пользователя from Авторизация where (Логин = '" + idUserKorzina + "')";
@@ -61,7 +61,7 @@ namespace ParikMag
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Server=DESKTOP-5QAL5CH\SQLEXPRESS03;Database=Parikmake;Trusted_Connection=true");
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.ParikmakeConnectionString);
             conn.Open();
             SqlCommand comm = conn.CreateCommand();
             comm.CommandText = "select Код_пользователя from Авторизация where (Логин = '" + idUserKorzina + "')";
@@ -69,7 +69,7 @@ namespace ParikMag
             клиентTableAdapter.Insert(textBoxName.Text, textBoxSurname.Text, textBoxPhone.Text, result);
             comm.CommandText = "select Код_клиента from Клиент";
             int result2 = Convert.ToInt32(comm.ExecuteScalar());
-            заказTableAdapter.Insert(result2, "Ожидает", DateTime.Now, Convert.ToInt32(((DataRowView)корзинаBindingSource.Current).Row["Код_корзины"]));
+            заказTableAdapter.Insert(result2, Convert.ToInt32(((DataRowView)корзинаBindingSource.Current).Row["Код_корзины"]), "Ожидает", DateTime.Now);
             MessageBox.Show("Заказ добавлен");
         }
     }

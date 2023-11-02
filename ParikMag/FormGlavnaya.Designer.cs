@@ -60,7 +60,7 @@
             this.корзинаBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.корзинаTableAdapter = new ParikMag.ParikmakeDataSetTableAdapters.КорзинаTableAdapter();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.товарBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parikmakeDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -382,16 +382,16 @@
             0,
             0});
             // 
-            // label10
+            // labelCount
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(587, 320);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 13);
-            this.label10.TabIndex = 41;
-            this.label10.Text = "Количество";
+            this.labelCount.AutoSize = true;
+            this.labelCount.BackColor = System.Drawing.Color.Transparent;
+            this.labelCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCount.Location = new System.Drawing.Point(587, 320);
+            this.labelCount.Name = "labelCount";
+            this.labelCount.Size = new System.Drawing.Size(76, 13);
+            this.labelCount.TabIndex = 41;
+            this.labelCount.Text = "Количество";
             // 
             // FormGlavnaya
             // 
@@ -401,7 +401,7 @@
             this.BackgroundImage = global::ParikMag.Properties.Resources.фон_основной;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(881, 446);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.labelCount);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
@@ -472,6 +472,6 @@
         private System.Windows.Forms.BindingSource корзинаBindingSource;
         private ParikmakeDataSetTableAdapters.КорзинаTableAdapter корзинаTableAdapter;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelCount;
     }
 }
